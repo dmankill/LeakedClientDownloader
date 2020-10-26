@@ -63,7 +63,7 @@ const config = new conf({ cwd: './' });
         version: obj.Version,
         file: splitted[5].replace(obj.FromVersion + '-', '').replace(obj.FromVersion + '-', '').replace('.update', '.zip'),
         path: splitted[4].replace(obj.FromVersion + '-', ''),
-        url: obj.DownloadUri.replace('ClientUpdates', 'ClientDistribs').replace(obj.FromVersion + '-', '').replace(obj.FromVersion + '-', '').replace('.update', '.zip')
+        url: obj.DownloadUri.replace('ClientUpdates', 'ClientDistribs').replace('\/updates\/', '\/distribs\/').replace(obj.FromVersion + '-', '').replace(obj.FromVersion + '-', '').replace('.update', '.zip')
       };
     });
 
